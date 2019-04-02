@@ -21,7 +21,7 @@ pipeline {
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
-				sh 'mvn deploy'
+				sh 'mvn clean'
 				echo 'succes!'
 			}
 		}
