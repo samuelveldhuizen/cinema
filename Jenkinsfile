@@ -21,9 +21,8 @@ pipeline {
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
-				sh 'mvn tomcat7:run -Dmaven.tomcat.port=8181'
+				sh 'mvn clean'
 				echo 'succes!'
-				echo 'git push test run!'
 			}
 		}
 	}
