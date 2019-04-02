@@ -21,7 +21,7 @@ pipeline {
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
-				sh 'mvn clean'
+				sh 'mvn tomcat7:run'
 				echo 'succes!'
 				echo 'git push test run!'
 			}
