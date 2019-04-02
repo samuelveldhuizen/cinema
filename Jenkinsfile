@@ -23,7 +23,7 @@ pipeline {
 				echo 'deploying...'
 				sh 'mvn clean'
 				echo 'succes!'
-				echo 'git push test run'
+				echo 'git push test run!'
 			}
 		}
 	}
