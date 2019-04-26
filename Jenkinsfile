@@ -15,12 +15,15 @@ pipeline {
 			steps {
 				echo 'testing...'
 				sh 'mvn test'
+				sh 'cd /home/sam/challenges/5_Jmeter/bin'
+				sh 'sh jmeter.sh -Jjmeter.save.saveservice.output_format=xml -n -t /home/sam/challenges/5_Jmeter/jmeter/bin/Cinema.jmx -l /home/sam/challenges/5_Jmeter/cinema/testResults/TestResult1.jtl'
 			}
 		}
 		
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
+				sh 'cd /home/sam/challenges/cinema'
 				sh 'mvn clean'
 				echo 'succes!'
 			}
