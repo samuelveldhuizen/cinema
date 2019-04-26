@@ -23,7 +23,7 @@ pipeline {
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
-				sh 'cd /home/sam/challenges/cinema'
+				sh 'cd /home/sam/challenges/5_Jmeter/cinema'
 				sh 'mvn clean'
 				echo 'succes!'
 			}
