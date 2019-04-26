@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="268" lt="0" ts="1555486084294" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="281" lt="0" ts="1555486084571" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="257" lt="0" ts="1555486085062" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="273" lt="0" ts="1555486085332" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="303" lt="0" ts="1555486085617" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="114" lt="0" ts="1555486085930" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="230" lt="0" ts="1555486086055" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="213" lt="0" ts="1555486086285" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="165" lt="0" ts="1555486086499" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="329" lt="0" ts="1555486086665" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="155" lt="0" ts="1555486087000" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="311" lt="0" ts="1555486087156" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+
+<sample t="145" lt="0" ts="1555486185927" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="301" lt="0" ts="1555486186080" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="300" lt="0" ts="1555486186594" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="106" lt="0" ts="1555486186908" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="228" lt="0" ts="1555486187032" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="222" lt="0" ts="1555486187275" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="194" lt="0" ts="1555486187508" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="135" lt="0" ts="1555486187703" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="270" lt="0" ts="1555486187839" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="286" lt="0" ts="1555486188110" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="327" lt="0" ts="1555486188406" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="146" lt="0" ts="1555486188734" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+
+<sample t="316" lt="0" ts="1555486618071" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="130" lt="0" ts="1555486618395" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="223" lt="0" ts="1555486618738" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="202" lt="0" ts="1555486618976" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="160" lt="0" ts="1555486619191" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="333" lt="0" ts="1555486619363" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="170" lt="0" ts="1555486619709" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="342" lt="0" ts="1555486619880" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="175" lt="0" ts="1555486620226" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="359" lt="0" ts="1555486620402" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="213" lt="0" ts="1555486620770" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="170" lt="0" ts="1555486620984" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+
+<sample t="156" lt="0" ts="1555488006620" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="301" lt="0" ts="1555488006785" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="343" lt="0" ts="1555488007329" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="181" lt="0" ts="1555488007685" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="119" lt="0" ts="1555488007876" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="262" lt="0" ts="1555488008004" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="264" lt="0" ts="1555488008279" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="289" lt="0" ts="1555488008544" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="311" lt="0" ts="1555488008834" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="112" lt="0" ts="1555488009146" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="233" lt="0" ts="1555488009264" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="213" lt="0" ts="1555488009498" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+
+<sample t="338" lt="0" ts="1555489202515" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="174" lt="0" ts="1555489202862" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="301" lt="0" ts="1555489203245" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="107" lt="0" ts="1555489203557" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="221" lt="0" ts="1555489203674" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="276" lt="0" ts="1555489203920" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="242" lt="0" ts="1555489204206" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="239" lt="0" ts="1555489204448" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="231" lt="0" ts="1555489204687" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="191" lt="0" ts="1555489204918" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="140" lt="0" ts="1555489205115" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="277" lt="0" ts="1555489205256" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+
+<sample t="198" lt="0" ts="1555489216655" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="146" lt="0" ts="1555489216860" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="266" lt="0" ts="1555489217235" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="290" lt="0" ts="1555489217511" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="332" lt="0" ts="1555489217811" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="164" lt="0" ts="1555489218154" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="347" lt="0" ts="1555489218330" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="179" lt="0" ts="1555489218677" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="126" lt="0" ts="1555489218856" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="254" lt="0" ts="1555489218982" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="232" lt="0" ts="1555489219243" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="213" lt="0" ts="1555489219476" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+
+<sample t="292" lt="0" ts="1555489284582" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="337" lt="0" ts="1555489284880" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="351" lt="0" ts="1555489285404" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="204" lt="0" ts="1555489285767" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="162" lt="0" ts="1555489285981" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="338" lt="0" ts="1555489286153" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="176" lt="0" ts="1555489286503" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="364" lt="0" ts="1555489286679" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="205" lt="0" ts="1555489287044" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="156" lt="0" ts="1555489287249" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="323" lt="0" ts="1555489287411" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="131" lt="0" ts="1555489287734" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+
+<sample t="343" lt="0" ts="1555490996953" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="180" lt="0" ts="1555490997302" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="291" lt="0" ts="1555490997671" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="347" lt="0" ts="1555490997979" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="191" lt="0" ts="1555490998337" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="141" lt="0" ts="1555490998537" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12"/>
+<sample t="291" lt="0" ts="1555490998690" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="326" lt="0" ts="1555490998982" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="145" lt="0" ts="1555490999309" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15"/>
+<sample t="289" lt="0" ts="1555490999455" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+<sample t="332" lt="0" ts="1555490999749" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13"/>
+<sample t="154" lt="0" ts="1555491000083" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0"/>
+
+</testResults>
