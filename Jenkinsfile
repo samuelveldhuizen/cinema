@@ -29,7 +29,7 @@ pipeline {
 		}
 	}
  	post {
-        	succes {
+        	success {
             		archiveArtifacts artifacts: 'testResult1.jtl', onlyIfSuccessful: true
         	}
     	}
