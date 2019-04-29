@@ -29,8 +29,8 @@ pipeline {
 		}
 	}
  	post {
-        	always {
-            		archiveArtifacts artifacts: '/home/sam/challenges/5_Jmeter/cinema/testResults/testResult1.jtl', onlyIfSuccessful: true
+        	succes {
+            		archiveArtifacts artifacts: 'testResult1.jtl', onlyIfSuccessful: true
         	}
     	}
 }
