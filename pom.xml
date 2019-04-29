@@ -67,13 +67,11 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>${slf4j.version}</version>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>${logback.version}</version>
-			<scope>runtime</scope>
 		</dependency>
 
 		<!-- Hibernate -->
@@ -318,14 +316,15 @@
 		</dependency>
 
 	</dependencies>
-
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
+				<configuration>
+					<port>8181</port>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
