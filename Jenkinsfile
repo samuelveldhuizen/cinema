@@ -15,7 +15,9 @@ pipeline {
 			steps {
 				echo 'testing...'
 				sh 'mvn test'
-				sh 'sh /var/lib/jenkins/workspace/cinema/jmeter/bin/jmeter.sh -Jjmeter.save.saveservice.output_format=xml -n -t /var/lib/jenkins/workspace/cinema/jmeter/bin/Cinema.jmx -l  /var/lib/jenkins/workspace/cinema/testResults/TestResult1.jtl'
+				sh 'sh /var/lib/jenkins/workspace/cinema/jmeter/bin/jmeter.sh -Jjmeter.save.saveservice.output_format=xml -n -t /var/lib/jenkins/workspace/cinema/jmeter/bin/Cinema.jmx -l  TestResult1.jtl'
+				sh 'git add TestResult1.jtl'
+				sh 'git commit -m "test result"'
 			}
 		}
 		
@@ -24,6 +26,7 @@ pipeline {
 				echo 'deploying...'
 				sh 'cd /var/lib/jenkins/workspace/cinema/'
 				sh 'mvn clean'
+				sh 'git push'
 				echo 'succes!'
 			}
 		}
