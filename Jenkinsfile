@@ -28,9 +28,4 @@ pipeline {
 			}
 		}
 	}
- 	post {
-        	success {
-            		archiveArtifacts artifacts: 'testResult1.jtl', onlyIfSuccessful: true
-        	}
-    	}
 }
