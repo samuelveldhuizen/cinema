@@ -325,6 +325,14 @@
 				<configuration>
 					<port>8181</port>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>intergration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
