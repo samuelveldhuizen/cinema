@@ -9,6 +9,7 @@ pipeline {
 				echo 'compile...'
 				sh 'mvn clean install'
 				sh 'cd /var/lib/jenkins/workspace/cinema/'
+				sh 'git init'
 			}
 		}
 
