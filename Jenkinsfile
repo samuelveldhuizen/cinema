@@ -9,7 +9,7 @@ pipeline {
 				echo 'compile...'
 				sh 'mvn clean install'
 				sh 'cd /var/lib/jenkins/workspace/cinema/'
-				sh 'git init'
+				sh 'git remote set-url origin git@github.com:samuelveldhuizen/cinema.git'
 				}
 		}
 
