@@ -26,8 +26,7 @@ pipeline {
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
-				sh 'git config --global push.default simple'
-				sh 'git push'
+				sh 'git push origin master'
 				sh 'mvn clean'
 				echo 'succes!'
 			}
