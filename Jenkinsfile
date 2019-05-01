@@ -7,7 +7,8 @@ pipeline {
 		stage ('Compile Stage'){
 			steps {
 				echo 'compile...'
-				sh 'mvn clean compile'
+				sh 'mvn clean install'
+				sh 'cd /var/lib/jenkins/workspace/cinema/'
 			}
 		}
 
@@ -15,14 +16,16 @@ pipeline {
 			steps {
 				echo 'testing...'
 				sh 'mvn test'
-				sh 'sh /var/lib/jenkins/workspace/cinema/jmeter/bin/jmeter.sh -Jjmeter.save.saveservice.output_format=xml -n -t /var/lib/jenkins/workspace/cinema/jmeter/bin/Cinema.jmx -l TestResult1.jtl'
+				sh 'sh /var/lib/jenkins/workspace/cinema/jmeter/bin/jmeter.sh -Jjmeter.save.saveservice.output_format=xml -n -t /var/lib/jenkins/workspace/cinema/jmeter/bin/Cinema.jmx -l ./testResults/TestResult1.jtl'
+				sh 'git add ./testResults/TestResult1.jtl'
+				sh 'git commit -m "test result"'
 				}
 		}
 		
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
-				sh 'cd /var/lib/jenkins/workspace/cinema/'
+				sh 'git push'
 				sh 'mvn clean'
 				echo 'succes!'
 			}
