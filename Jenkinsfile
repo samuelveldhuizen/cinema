@@ -10,6 +10,8 @@ pipeline {
 				sh 'mvn clean install'
 				sh 'cd /var/lib/jenkins/workspace/cinema/'
 				sh 'git init'
+				sh 'git config --global user.name "sam"'
+				sh 'git config --global user.email “samuel.veldhuizen@devoteam.com”'
 			}
 		}
 
