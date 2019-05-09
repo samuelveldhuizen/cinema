@@ -319,6 +319,12 @@
                         <artifactId>selenium-server</artifactId>
                         <version>2.53.0</version>
 		</dependency>
+		<dependency>
+ 	       		<groupId>javax.servlet</groupId>
+        		<artifactId>servlet-api</artifactId>
+       			<version>2.5</version>
+        		<scope>provided</scope>
+    		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -330,20 +336,23 @@
 					<port>8181</port>
 				</configuration>
 			</plugin>
+<!--
 <plugin>
     <groupId>com.lazerycode.jmeter</groupId>
     <artifactId>jmeter-maven-plugin</artifactId>
     <version>2.9.0</version>
     <executions>
+-->
 	   <!-- Run JMeter tests -->
-       <execution>
+   <!--  <execution>
             <id>jmeter-tests</id>
             <goals>
                 <goal>jmeter</goal>
             </goals>
        </execution>
+-->
        <!-- Fail build on errors in test -->
-       <execution>
+   <!--    <execution>
             <id>jmeter-check-results</id>
             <goals>
                 <goal>results</goal>
@@ -351,6 +360,7 @@
        </execution>
     </executions>
 </plugin>
+-->
 		</plugins>
 	</build>
 </project>
