@@ -7,6 +7,7 @@ pipeline {
 		stage ('Compile Stage'){
 			steps {
 				echo 'compile...'
+				sh "wget https://raw.githubusercontent.com/Blazemeter/taurus/master/examples/jmeter/stepping.yml"
 				sh 'cd /var/lib/jenkins/workspace/cinema/'
 				}
 		}
@@ -21,6 +22,7 @@ pipeline {
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
+				bzt "stepping.yml"
 				sh 'mvn clean'
 				echo 'succes!'
 			}
