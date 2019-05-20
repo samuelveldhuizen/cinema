@@ -1,37 +1,27 @@
 package ba.pehli.cinema.test;
-
-import org.springframework.social.connect.Connection;
-import org.springframework.social.connect.ConnectionData;
-import org.springframework.social.connect.ConnectionRepository;
-import org.springframework.social.facebook.api.Facebook;
-import org.springframework.social.facebook.connect.FacebookConnectionFactory;
-import org.springframework.social.oauth1.OAuth1Operations;
-import org.springframework.social.oauth2.AccessGrant;
-import org.springframework.social.oauth2.OAuth2Operations;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.junit.Assert;
-
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.*;
+import static org.testng.Assert.assertEquals;
+import org.testng.Assert;
 public class Tester {
-
+	
                         public WebDriver driver;
 
                         public String testURL = "http://localhost:8181/cinema/movies";
-    
 
-                       public WebElement usernameElement = driver.findElement(By.id("j_username"));
+
+                       	 public WebElement usernameElement = driver.findElement(By.id("j_username"));
                          public WebElement passwordElement = driver.findElement(By.id("j_password"));
                          public WebElement formElement = driver.findElement(By.id("loginForm"));
 
                          @BeforeMethod
                          public void setupTest (){
-                                 driver = new ChromeDriver();
+                                 driver = new FirefoxDriver();
 
                                  driver.navigate().to(testURL);
                          }
@@ -42,9 +32,9 @@ public class Tester {
                                  usernameElement.sendKeys("admin");
                                  passwordElement.sendKeys("admin");
                                  formElement.submit();
-                            
-                                 webElement messageElement = wait.until(
-                                    ExpectedConditions.presenceOfElementLocated(By.class_name("welcome"))
+				 WebDriverWait wait = new WebDriverWait(driver, 5);
+                                 WebElement messageElement = wait.until(
+                                    ExpectedConditions.presenceOfElementLocated(By.className("welcome"))
                                  );
 
 
@@ -58,4 +48,4 @@ public class Tester {
 
                          driver.quit();
                          }
-                }
+}

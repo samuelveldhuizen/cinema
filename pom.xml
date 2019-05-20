@@ -311,19 +311,34 @@
 			<artifactId>spring-mobile-device</artifactId>
 			<version>1.1.5.RELEASE</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.5.3</version>
+  		
+		<!--<dependency>
+        		<groupId>org.seleniumhq.selenium</groupId>
+        		<artifactId>selenium-java</artifactId>
+        		<version>2.53.0</version>
+    		</dependency>-->
+	    	<dependency>
+			<groupId>org.testng</groupId>
+                       	<artifactId>testng</artifactId>                         
+			<version>6.9.10</version>
 		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-			<scope>test</scope>
-		</dependency>
+   <dependency>
+   <groupId>org.junit.jupiter</groupId>
+   <artifactId>junit-jupiter-api</artifactId>
+   <version>5.1.0</version>
+   <scope>test</scope>
+   </dependency>
+   <dependency>
+     <groupId>org.seleniumhq.selenium</groupId>
+       <artifactId>selenium-java</artifactId>
+       <version>3.141.59</version>
+   </dependency>
+ 		<dependency>
+      			<groupId>junit</groupId>
+      			<artifactId>junit</artifactId>
+      			<version>4.11</version>
+      			<scope>test</scope>
+    		</dependency>	
 		</dependencies>
 		<build>
 			<plugins>
@@ -362,6 +377,27 @@
                 			<port>8181</port>
 				</configuration> 
 			</plugin>
+			<plugin>
+    <groupId>com.lazerycode.jmeter</groupId>
+    <artifactId>jmeter-maven-plugin</artifactId>
+    <version>2.9.0</version>
+    <executions>
+	   <!-- Run JMeter tests -->
+       <execution>
+            <id>jmeter-tests</id>
+            <goals>
+                <goal>jmeter</goal>
+            </goals>
+       </execution>
+       <!-- Fail build on errors in test -->
+       <execution>
+            <id>jmeter-check-results</id>
+            <goals>
+                <goal>results</goal>
+            </goals>
+       </execution>
+    </executions>
+</plugin>
 	</plugins>
 	</build>
 </project>
