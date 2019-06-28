@@ -8,7 +8,7 @@ pipeline {
 			steps {
 				echo 'compile...'
 				sh 'cd /var/lib/jenkins/workspace/cinema/'
-				sh 'ansible-playbook -i hosts move_tc.yml --user=sam --extra-vars "ansible_become_pass=password"'
+				sh 'ansible-playbook -i hosts move_tc.yml --user=jenkins --extra-vars "ansible_become_pass=password"'
 				sh 'ls -la'
 				}
 		}
