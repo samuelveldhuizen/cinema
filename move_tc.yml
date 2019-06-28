@@ -1,6 +1,6 @@
 ---
 - hosts: tc
-  remote_user: sam
+  remote_user: jenkins
   become: yes
   become_method: sudo
   tasks:
