@@ -1,0 +1,9 @@
+---
+- hosts: ac
+  remote_user: sam
+  become: yes
+  become_method: sudo
+  tasks:
+  - git:
+      repo: 'https://github.com/samuelveldhuizen/cinema.git'
+      dest: /home/sam/cinema/
