@@ -7,3 +7,5 @@
   - git:
       repo: 'https://github.com/samuelveldhuizen/cinema.git'
       dest: /home/sam/cinema/
+  - name: start tomcat
+    command: mvn clean tomcat7:run
