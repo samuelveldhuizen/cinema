@@ -15,4 +15,4 @@
     command: cd ~/cinema/
 
   - name: start tomcat
-    command: mvn clean tomcat7:run -f ~/cinema/pom.xml
+    command: mvn clean tomcat7:run -f ~/cinema/pom.xml &
