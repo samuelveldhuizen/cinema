@@ -9,7 +9,7 @@
       dest: /cinema/
 
   - name: move to directory
-    command: /cinema/
+    command: cd /cinema/
 
   - name: start tomcat
     command: mvn clean tomcat7:run
