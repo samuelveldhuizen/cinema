@@ -9,6 +9,7 @@
   - git:
       repo: 'https://github.com/samuelveldhuizen/cinema.git'
       dest: ~/cinema/
+      force: yes
 
   - name: move to directory
     command: cd ~/cinema/
