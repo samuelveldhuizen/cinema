@@ -6,10 +6,10 @@
   tasks:
   - git:
       repo: 'https://github.com/samuelveldhuizen/cinema.git'
-      dest: /home/sam/cinema/
+      dest: /cinema/
 
   - name: move to directory
-    command: /home/sam/cinema/
+    command: /cinema/
 
   - name: start tomcat
     command: mvn clean tomcat7:run
