@@ -15,4 +15,4 @@
     command: cd ~/cinema/
 
   - name: start tomcat
-    command: mvn compile
+    command: mvn compile -f ~/cinema/
