@@ -17,12 +17,14 @@ pipeline {
 			steps {
 				echo 'testing...'				
 				sh 'mvn clean verify'
-				// sh 'sh /var/lib/jenkins/workspace/cinema/jmeter/bin/jmeter.sh -Jjmeter.save.saveservice.output_format=xml -n -t /var/lib/jenkins/workspace/cinema/jmeter/bin/Cinema.jmx -l ./testResults/TestResult1.jtl'
-			}
+				sh 'ansible-playbook -i hosts move_ac.yml --user=jenkins --extra-vars "ansible_become_pass=password"'
+				sh 'sh /var/lib/jenkins/workspace/cinema/jmeter/bin/jmeter.sh -Jjmeter.save.saveservice.output_format=xml -n -t /var/lib/jenkins/workspace/cinema/jmeter/bin/Cinema.jmx -l ./testResults/TestResult1.jtl'
+			}	
 		}
                 stage ('Deployment Stage') {
 			steps {
 				echo 'deploying...'
+				sh 'ansible-playbook -i hosts move_pc.yml --user=jenkins --extra-vars "ansible_become_pass=password"'
 				sh 'mvn clean'
 				echo 'succes!'
 			}
