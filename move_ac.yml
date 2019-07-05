@@ -4,6 +4,15 @@
   become: yes
   become_method: sudo
   tasks:
+  - name: create directory cinema
+    command: mkdir -p ~/cinema/
   - git:
       repo: 'https://github.com/samuelveldhuizen/cinema.git'
-      dest: /home/sam/cinema/
+      dest: ~/cinema/
+      force: yes
+
+  - name: move to directory
+    command: cd ~/cinema/
+
+  - name: start tomcat
+    command: mvn compile -f ~/cinema/
