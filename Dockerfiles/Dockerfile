@@ -1,15 +1,18 @@
-FROM openjdk:8
-ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
-RUN export JAVA_HOME
+FROM centos
 
-RUN echo $JAVA_HOME
-RUN java -version
+RUN yum install -y \
+       java-1.8.0-openjdk \
+       java-1.8.0-openjdk-devel
 
+ENV JAVA_HOME /etc/alternatives/jre
 
 FROM maven
+
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 WORKDIR /tmp/
 USER docker
-ENTRYPOINT ["mvn","clean"]
-ENTRYPOINT ["mvn", "tomcat7:run"]
+
+CMD ["javac","-version"]
+#CMD ["mvn","clean"]
+#CMD ["mvn", "tomcat7:run"]
 
