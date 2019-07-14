@@ -12,7 +12,7 @@
       force: yes
 
   - name: move to directory
-    command: cd /home/jenkins/cinema/Dockerfile
+    command: cd /home/jenkins/cinema/Dockerfiles/
 
   - name: build docker image
     command: docker build -t test/test1 .
