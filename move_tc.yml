@@ -8,11 +8,11 @@
     command: mkdir -p ~/cinema/
   - git:
       repo: 'https://github.com/samuelveldhuizen/cinema.git'
-      dest: ~/cinema/
+      dest: /home/jenkins/cinema/
       force: yes
 
   - name: move to directory
-    command: cd ~/cinema/Dockerfile
+    command: cd /home/jenkins/cinema/Dockerfile
 
   - name: build docker image
     command: docker build -t test/test1 .
