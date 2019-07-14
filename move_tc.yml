@@ -12,10 +12,10 @@
       force: yes
 
   - name: move to directory
-    command: cd /home/jenkins/cinema/Dockerfiles/
+   ## command: cd /home/jenkins/cinema/Dockerfiles/
 
   - name: stop tomcat
-    command: docker stop tomcat || true && docker rm rabbitmq || true
+    command: docker stop tomcat 
 
   - name: system prune
     command: docker system prune -f
