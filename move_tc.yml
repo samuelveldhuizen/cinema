@@ -19,3 +19,6 @@
   
   - name: run docker container
     command: docker run --name tomcat -d -p 8282:8181 -v /home/sam/.m2:/home/docker/.m2  -v /home/jenkins/cinema:/tmp test/test1
+
+  - name: start docker tomcat
+    command: docker start tomcat
