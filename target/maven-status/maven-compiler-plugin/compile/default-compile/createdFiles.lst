@@ -17,8 +17,8 @@ ba/pehli/cinema/service/RatingDaoImpl.class
 ba/pehli/cinema/controller/MovieController.class
 ba/pehli/cinema/domain/CreditCardEditor.class
 ba/pehli/cinema/domain/Rating.class
-ba/pehli/cinema/controller/MovieController$1.class
 ba/pehli/cinema/controller/RestfulWSControlles.class
+ba/pehli/cinema/controller/MovieController$1.class
 ba/pehli/cinema/controller/UsersController.class
 ba/pehli/cinema/domain/Movie.class
 ba/pehli/cinema/service/UserDao.class
