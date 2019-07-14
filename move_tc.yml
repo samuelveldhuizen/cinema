@@ -18,7 +18,7 @@
     command: docker stop tomcat
 
   - name: system prune
-    command: system prune -f
+    command: docker system prune -f
 
   - name: build docker image
     command: docker build -t test/test1 /home/jenkins/cinema/Dockerfiles/
