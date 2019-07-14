@@ -1,0 +1,12 @@
+10.0.2.2 - - [12/Jul/2019:14:09:22 +0000] "GET /cinema/movies HTTP/1.1" 200 8572 http-bio-8181-exec-1 443
+10.0.2.2 - - [12/Jul/2019:14:09:22 +0000] "GET /cinema/movies/photo/1 HTTP/1.1" 200 139198 http-bio-8181-exec-4 95
+10.0.2.2 - - [12/Jul/2019:14:09:22 +0000] "GET /cinema/movies/photo/2 HTTP/1.1" 200 16083 http-bio-8181-exec-2 97
+10.0.2.2 - - [12/Jul/2019:14:09:22 +0000] "GET /cinema/movies/photo/3 HTTP/1.1" 200 128881 http-bio-8181-exec-3 94
+10.0.2.2 - - [12/Jul/2019:14:09:22 +0000] "GET /cinema/movies/photo/5 HTTP/1.1" 200 14310 http-bio-8181-exec-5 15
+10.0.2.2 - - [12/Jul/2019:14:09:22 +0000] "GET /cinema/movies/photo/4 HTTP/1.1" 200 14487 http-bio-8181-exec-6 19
+10.0.2.2 - - [12/Jul/2019:14:25:42 +0000] "GET /cinema/movies HTTP/1.1" 200 8572 http-bio-8181-exec-1 672
+10.0.2.2 - - [12/Jul/2019:14:25:43 +0000] "GET /cinema/movies/photo/3 HTTP/1.1" 200 128881 http-bio-8181-exec-3 137
+10.0.2.2 - - [12/Jul/2019:14:25:43 +0000] "GET /cinema/movies/photo/1 HTTP/1.1" 200 139198 http-bio-8181-exec-4 158
+10.0.2.2 - - [12/Jul/2019:14:25:43 +0000] "GET /cinema/movies/photo/2 HTTP/1.1" 200 16083 http-bio-8181-exec-2 140
+10.0.2.2 - - [12/Jul/2019:14:25:43 +0000] "GET /cinema/movies/photo/4 HTTP/1.1" 200 14487 http-bio-8181-exec-7 31
+10.0.2.2 - - [12/Jul/2019:14:25:43 +0000] "GET /cinema/movies/photo/5 HTTP/1.1" 200 14310 http-bio-8181-exec-5 30
