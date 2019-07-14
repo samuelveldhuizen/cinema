@@ -13,7 +13,7 @@ pipeline {
 				}
 		}
 
-	/*	stage ('Testing Stage') {
+		stage ('Testing Stage') {
 			steps {
 				echo 'testing...'				
 				sh 'mvn clean verify'
@@ -28,6 +28,6 @@ pipeline {
 				sh 'mvn clean'
 				echo 'succes!'
 			}
-		}*/
+		}
 	}
 }
