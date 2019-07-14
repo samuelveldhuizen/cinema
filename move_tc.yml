@@ -14,6 +14,12 @@
   - name: move to directory
     command: cd /home/jenkins/cinema/Dockerfiles/
 
+  - name: stop tomcat
+    command: docker stop tomcat
+
+  - name: system prune
+    command: system prune -f
+
   - name: build docker image
     command: docker build -t test/test1 /home/jenkins/cinema/Dockerfiles/
   
