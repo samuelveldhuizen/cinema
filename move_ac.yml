@@ -8,11 +8,23 @@
     command: mkdir -p ~/cinema/
   - git:
       repo: 'https://github.com/samuelveldhuizen/cinema.git'
-      dest: ~/cinema/
+      dest: /home/sam/challenges/6_provisioning/cinema
       force: yes
 
   - name: move to directory
-    command: cd ~/cinema/
+    command: cd /home/jenkins/cinema/Dockerfiles/
 
-  - name: start tomcat
-    command: mvn compile -f ~/cinema/
+  - name: stop tomcat
+    command: docker stop tomcat
+
+  - name: system prune
+    command: docker system prune -f
+
+  - name: build docker image
+    command: docker build -t test/test1 /home/jenkins/cinema/Dockerfiles/
+
+  - name: run docker container
+    command: docker run --name tomcat -d -p 8383:8181 -v /home/sam/.m2:/home/docker/.m2  -v /home/sam/challenges/6_provisioning/cinema:/tmp test/test1
+
+  - name: start docker tomcat
+    command: docker start tomcat
