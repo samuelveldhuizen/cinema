@@ -1,6 +1,6 @@
 ---
 - hosts: tc
-  remote_user: root
+  remote_user: sam
   become: yes
   become_method: sudo
   tasks:
