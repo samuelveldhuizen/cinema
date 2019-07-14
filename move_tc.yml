@@ -11,7 +11,7 @@
       dest: /home/sam/challenges/6_provisioning/cinema
       force: yes
 
-  - name: move to directory
+  ##- name: move to directory
    ## command: cd /home/jenkins/cinema/Dockerfiles/
 
   - name: stop tomcat
