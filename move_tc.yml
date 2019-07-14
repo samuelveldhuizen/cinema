@@ -8,7 +8,7 @@
     command: mkdir -p ~/cinema/
   - git:
       repo: 'https://github.com/samuelveldhuizen/cinema.git'
-      dest: /home/jenkins/cinema/
+      dest: /home/sam/challenges/6_provisioning/cinema
       force: yes
 
   - name: move to directory
