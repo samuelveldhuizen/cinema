@@ -18,4 +18,4 @@
     command: docker build -t test/test1 /home/jenkins/cinema/Dockerfiles/
   
   - name: run docker container
-    command: docker run -d -p 8181:8282 -v /home/sam/.m2:/home/docker/.m2  -v /home/jenkins/cinema:/tmp test/test1
+    command: docker run -d -p 8282:8181 -v /home/sam/.m2:/home/docker/.m2  -v /home/jenkins/cinema:/tmp test/test1
