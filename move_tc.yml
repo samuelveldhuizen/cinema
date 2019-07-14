@@ -11,11 +11,11 @@
       dest: /home/sam/challenges/6_provisioning/cinema
       force: yes
 
-  ##- name: move to directory
-   ## command: cd /home/jenkins/cinema/Dockerfiles/
+  - name: move to directory
+    command: cd /home/jenkins/cinema/Dockerfiles/
 
-  - name: stop tomcat
-    command: docker stop tomcat 
+  ##- name: stop tomcat
+    ##command: docker stop tomcat 
 
   - name: system prune
     command: docker system prune -f
