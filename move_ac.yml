@@ -7,7 +7,7 @@
   - name: create directory cinema
     command: mkdir -p ~/cinema/
   - git:
-      repo: 'git@github.com/samuelveldhuizen/cinema.git'
+      repo: 'git@github.com:samuelveldhuizen/cinema.git'
       dest: /home/sam/challenges/6_provisioning/cinema
       force: yes
 
