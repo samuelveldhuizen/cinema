@@ -20,6 +20,9 @@
   - name: system prune
     command: docker system prune -f
 
+  - name: remove target map                                        
+    command: rm -R  /home/sam/challenges/6_provisioning/cinema/    
+
   - name: build docker image
     command: docker build -t test/test1 /home/jenkins/cinema/Dockerfiles/
   
