@@ -4,7 +4,7 @@ pipeline {
 		maven 'maven_3.6.1'
 	}
 	stages {
-		stage ('Compile Stage'){
+		stage ('test cinema'){
 			steps {
 				echo 'compile...'
 				sh 'cd /var/lib/jenkins/workspace/cinema/'
@@ -13,14 +13,14 @@ pipeline {
 				}
 		}
 
-		stage ('Testing Stage') {
+		stage ('acc cinema') {
 			steps {
 				echo 'testing...'				
 				sh 'mvn clean test'
 				sh 'ansible-playbook -i hosts move_ac.yml --user=jenkins --extra-vars "ansible_become_pass=password"'
 				}	
 		}
-                stage ('Deployment Stage') {
+                stage ('prodd cinema') {
 			steps {
 				echo 'deploying...'
 				sh 'mvn clean verify'
