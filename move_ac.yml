@@ -32,9 +32,9 @@
   - name: start docker tomcat
     command: docker start tomcat
  
-  - name: timeout
-    wait_for: timeout=10
-    delay: 10
+  #- name: timeout
+   # wait_for: timeout=10
+   # delay: 10
 
   - name: test jmeter
     command: mvn -f /home/sam/challenges/6_provisioning/cinema/ clean verify
