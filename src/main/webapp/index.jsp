@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Welcome</title>
+		<title>doei</title>
 	</head> 
 	<body>
 		<c:url value="/movies" var="homeUrl" />
