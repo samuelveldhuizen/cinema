@@ -12,7 +12,7 @@ import org.springframework.social.oauth2.OAuth2Operations;
 
 public class Tester {
 	
-@Test	
+//@test	
 	public static void main(String[] args) {
 
 	}
