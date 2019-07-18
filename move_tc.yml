@@ -10,13 +10,7 @@
       repo: 'https://github.com/samuelveldhuizen/cinema.git'
       dest: /home/sam/challenges/6_provisioning/cinema/
       force: yes
-
-  - name: move to directory 
-    command: cd /home/jenkins/cinema/
-
-  - name: jmeter test
-    command: mvn clean verify
-
+ 
   - name: move to directory
     command: cd /home/jenkins/cinema/Dockerfiles/
 
@@ -25,6 +19,9 @@
 
   - name: system prune
     command: docker system prune -f
+
+  - name: test jmeter
+    command: mvn -f /home/sam/challenges/6_provisioning/cinema/ clean verify
 
   - name: remove target map                                        
     command: rm -R  /home/sam/challenges/6_provisioning/cinema/target/
