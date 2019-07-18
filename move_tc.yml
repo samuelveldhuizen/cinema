@@ -20,9 +20,6 @@
   - name: system prune
     command: docker system prune -f
 
-  - name: test jmeter
-    command: mvn -f /home/sam/challenges/6_provisioning/cinema/ clean verify
-
   - name: remove target map                                        
     command: rm -R  /home/sam/challenges/6_provisioning/cinema/target/
 

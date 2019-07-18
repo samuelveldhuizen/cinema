@@ -31,3 +31,9 @@
 
   - name: start docker tomcat
     command: docker start tomcat
+ 
+  - name: timeout
+    command: 30
+
+  - name: test jmeter
+    command: mvn -f /home/sam/challenges/6_provisioning/cinema/ clean verify
